@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/87b7f316c9.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="app/todo.js" defer></script>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/todo.css" type="text/css" />
+  <title>Assignment: To Do List</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <div class="container">
+      <a href="#home" class="navbar-brand">
+        <img src="img/tdl.png" width="75" height="75" alt="To Do List">
+        <h3 class="d-inline align-middle">To Do List</h3>
+      </a>
+    </div>
+  </nav>
+
+  <section id="showcase" class="py-5">
+    <div class="primary-overlay text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="mt-5 pt-5">
+              Seize The Day...
+            </h1>
+              <div id='todo-list'></div>
+              <form id="create-task">
+                <input id="new-task-content" type="text" placeholder="new task" class="form-control form-control" required/>
+                <button class="mt-2 btn btn-primary btn-lg btn-outline-light"><i class="fas fa-arrow-right"></i>Create</button>
+              </form>
+  
+              <div id="toggle-buttons">
+                <button class="mt-4 btn btn-primary btn-outline-light btn-lg toggle-btn" data-filter="all"><i class="fas fa-arrow-right"></i>All</button>
+                <button class="mt-4 btn btn-primary btn-lg toggle-btn btn-outline-light" data-filter="complete"><i class="fas fa-arrow-right"></i>Complete</button>
+                <button class="mt-4 btn btn-primary btn-lg toggle-btn btn-outline-light" data-filter="active"><i class="fas fa-arrow-right"></i>Active</button>
+              </div>
+           </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+</body>
+
+</html>
